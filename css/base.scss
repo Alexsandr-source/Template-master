@@ -1,0 +1,171 @@
+:root {
+    --acent-color:#F83718;
+}
+
+.maketforfigma{
+    flex: 0 0 auto;
+    background: #313a46;
+    font-weight: bold;
+    display: flex;
+}
+.maketforfigma img{
+    border-radius: 10px;
+    margin: 4px 0 0 4px;
+}
+.maketforfigma p {
+    color: #98a6ad;
+    text-decoration: none;
+    letter-spacing: .01875rem;
+    font-size: .775rem;
+    padding: 0 10px;
+    line-height: 0.70rem;
+}
+.maketforfigma p > a {
+    color: #bbe4f0;
+    font-weight: bold;
+}
+.maketforfigma p > a:hover {
+    color: #ffffff
+}
+.main{
+    flex: 1 0 auto;
+}
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Начало */
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+.active {
+    background-color: #ffffff;
+    box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
+}
+
+.btn{
+    &-language {
+        border: none;
+        border-radius: 12px;
+        color: #000;
+
+        &:hover {
+            color: var(--acent-color);
+            background-color: #ffffff;
+            box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
+        }
+    }
+}
+
+.nav {
+    &-language {
+        background-color: #F0F0F0;
+        border-radius: 15px;
+        padding:5px;
+    }
+
+    &-link {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #000;
+
+        &:hover {
+            color: var(--acent-color);
+        }
+    }
+}
+
+.intro {
+    padding: 104px 0px;
+
+    &-title {
+        margin-top: 30px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+
+        text-transform: uppercase;
+    }
+    &-text {
+        margin-top: 30px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+
+.services {
+    &-title {
+        margin-top: 100px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+
+        text-align: center;
+        text-transform: uppercase;
+        & span {
+            color: var(--acent-color);
+        }
+    }
+
+    &-text {
+        margin-top: 30px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+
+        color: #000000;
+    }
+
+    &-card {
+        & p {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 150%;
+
+            color: #000000;
+        }
+        & h2 {
+            margin-top: 22px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--acent-color);
+        }
+    }
+}
