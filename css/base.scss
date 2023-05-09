@@ -44,8 +44,12 @@ body{
 
 /* Начало */
 
-h1 {
+h1{
     color: #ffffff;
+}
+
+a {
+    text-decoration: none;
 }
 
 p {
@@ -69,6 +73,28 @@ p {
             box-shadow: 1.38889px 1.38889px 5.55556px rgba(48, 48, 56, 0.12);
         }
     }
+
+    &-modulse {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        margin-top: 30px;
+        padding: 9px 28px;
+        border: none;
+        border-radius: 0px;
+        background-color: var(--acent-color);
+
+        transition: .5s;
+        &:hover {
+            opacity: .5;
+        }
+    }
 }
 
 .nav {
@@ -82,7 +108,7 @@ p {
         font-family: 'Ubuntu';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 130%;
         letter-spacing: 0.02em;
         text-transform: uppercase;
@@ -168,4 +194,221 @@ p {
             color: var(--acent-color);
         }
     }
+}
+
+.modulse {
+    margin-top: 20px;
+    padding: 50px 80px;
+    border: 2px solid #F9F9F9;
+
+
+    &-title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        color: #000000;
+    }
+    &-text {
+        margin:30px 0;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 120%;
+
+        color: #1B1925;
+    }
+}
+
+.casting {
+    &-img {
+        margin-top: 30px;
+        background-color: #ffffff;
+    }
+}
+
+.docManage {
+    margin-top: 100px;
+
+    &-container {
+        padding: 80px 50px;
+        transform: translateY(50%);
+        background-color: #ffffff;
+    }
+
+    &-header {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &-cards {
+        padding-top: 400px;
+        padding-bottom: 100px;
+        background-color: #01AFEB;
+    }
+
+    &-title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+
+    &-text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+}
+
+.custom {
+    &-container {
+        margin-top: 200px;
+    }
+
+    &-block {
+        transition: .7s;
+        min-height: 300px;
+        & img {
+            width: 100px;
+            height: 100px;
+            margin: 20px 0px;
+        }
+
+        &:hover {
+            background-color: var(--acent-color);
+            & img {
+                display: none;
+            }
+            & h3 {
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    font-family: 'Ubuntu';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 100%;
+                    text-align: center;
+                    color: #FFFFFF;
+    
+                    content: "Разработка приложений для телевизоров Samsung и LG с функцией Smart TV, а также для устройств Android TV и Apple TV. Smart TV является молодой и развивающейся площадкой для пользовательских приложений в большей части для воспроизведения мультимедийного контента";
+                }
+            }
+        }
+    }
+
+    &-title::after {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #000;
+
+        content: "Разработки для SMART-TV";
+        &-sub {
+            display: none;
+        }
+    }
+}
+
+.footer {
+    &-container {
+        margin-top: 180px;
+    }
+    &-block {
+        padding: 20px;
+        &2 {
+            padding: 40px;
+        }
+    }
+
+    &-title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &2 {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+
+    &-text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF;
+        &2 {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+        }
+    }
+
+    &-link {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: #FFFFFF;
+        &2 {
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+        }
+    }
+
+    &-bottom {
+        margin-top: 60px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 150%;
+        text-align: center;
+        color: #959595;
+    }
+    
 }
